@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="DannyGC Cloud Portal — AI-Powered Server Dashboard"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="theme-color" content="#0a0806"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;DannyGC Cloud Portal&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="manifest" href="/manifest.json"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-title" content="DannyGC"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="mobile-web-app-capable" content="yes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="application-name" content="DannyGC Cloud"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Sora:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── RESET &amp; ROOT ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html { scroll-behavior: smooth; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #0a0806; --bg2: #120e08; --bg3: #1c1509; --bg4: #261c0c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card: #1a1208; --card-hover: #221a0a; --border: rgba(245,166,35,0.18);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border-bright: rgba(245,166,35,0.50); --amber: #f5a623; --amber-dim: #c47a1e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--amber-glow: rgba(245,166,35,0.15); --amber-glow2: rgba(245,166,35,0.08);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--cyan: #00c8ff; --cyan-dim: #38bdf8; --cyan-glow: rgba(0,200,255,0.15);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--orange: #f97316; --green: #22c55e; --red: #ef4444; --purple: #a855f7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #f0e8d8; --text-dim: #a89070; --text-muted: #5a4a30;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 12px; --radius-lg: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--cat-auto: #f97316; --cat-dev: #00c8ff; --cat-ai: #a855f7; --cat-prod: #22c55e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--transition: all 0.22s cubic-bezier(0.23,1,0.32,1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>::-webkit-scrollbar { width: 5px; height: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>::-webkit-scrollbar-track { background: var(--bg2); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── TECH CANVAS &amp; SPLASH ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#techCanvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.55; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#splash { position: fixed; inset: 0; z-index: 9999; background: radial-gradient(ellipse at 50% 40%, #050d1a 0%, #000508 60%, #000 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; transition: opacity 1.2s ease, visibility 1.2s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#splash.hidden { opacity: 0; visibility: hidden; pointer-events: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#splash::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(0,200,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,200,255,0.04) 1px, transparent 1px); background-size: 40px 40px; animation: gridDrift 20s linear infinite; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes gridDrift { from{background-position:0 0} to{background-position:40px 40px} }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.splash-logo-wrap { text-align: center; margin-bottom: 24px; position: relative; z-index: 2; animation: splashLogoIn 1.4s ease 0.5s both; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes splashLogoIn { from { opacity: 0; transform: scale(0.75) translateY(-30px); } to { opacity: 1; transform: scale(1) translateY(0); } }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.splash-title { font-family: 'Sora', sans-serif; font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #c47a1e, #f5a623, #00c8ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 0.08em; text-transform: uppercase; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.splash-sub { font-size: 0.72rem; color: rgba(0,200,255,0.5); letter-spacing: 0.22em; text-transform: uppercase; margin-top: 6px; }</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.terminal-window { width: min(620px, 90vw); background: #0d0a06; border: 1px solid rgba(245,166,35,0.25); border-radius: 10px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.9); animation: termIn 0.8s ease 1.2s both; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes termIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.terminal-bar { background: #160f05; padding: 10px 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid rgba(245,166,35,0.15); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-dot { width: 12px; height: 12px; border-radius: 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-dot.red { background: #ff5f57; } .term-dot.yellow { background: #febc2e; } .term-dot.green { background: #28c840; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.terminal-body { padding: 18px 20px; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 2; min-height: 180px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-line { display: flex; align-items: center; gap: 12px; opacity: 0; transition: opacity 0.3s; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-line.visible { opacity: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-ok { color: #28c840; font-weight: 700; flex-shrink: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-text { color: #a89070; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.term-cursor { display: inline-block; width: 8px; height: 15px; background: var(--amber); animation: blink 1s step-end infinite; vertical-align: middle; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── MAIN LAYOUT ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#app { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#app.visible { display: flex; height: 100vh; overflow: hidden; position: relative; z-index: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sidebar { width: 230px; min-width: 230px; background: rgba(18,14,8,0.92); border-right: 1px solid var(--border); display: flex; flex-direction: column; z-index: 10; backdrop-filter: blur(12px); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-logo { padding: 18px 16px 14px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo-text { font-size: 13px; font-weight: 700; line-height: 1.2; } .logo-text .amber { color: var(--amber); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-nav { flex: 1; padding: 10px 8px; overflow-y: auto; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-label { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; color: var(--text-muted); text-transform: uppercase; padding: 0 10px; margin-bottom: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--text-dim); transition: var(--transition); border: none; background: none; width: 100%; text-align: left; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-item:hover { background: var(--bg3); color: var(--text); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-item.active { background: var(--amber-glow); color: var(--amber); border: 1px solid rgba(245,166,35,0.25); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-icon { font-size: 15px; width: 20px; text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sidebar-status { padding: 10px 14px; border-top: 1px solid var(--border); font-size: 11px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.status-row { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; color: var(--text-dim); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.status-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.status-dot.green { background: var(--green); box-shadow: 0 0 6px var(--green); animation: pulse 2s infinite; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.status-dot.red { background: var(--red); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.3);opacity:0.7} }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.status-val { margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--green); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.topbar { height: 52px; min-height: 52px; background: rgba(18,14,8,0.88); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 24px; gap: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.topbar-title { font-size: 16px; font-weight: 700; flex: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.content { flex: 1; overflow-y: auto; padding: 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-panel { display: none; } .tab-panel.active { display: block; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── CHAT PANEL ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-panel { display: flex; flex-direction: column; height: 100%; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-info .chat-name { font-size: 14px; font-weight: 700; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-info .chat-model { font-size: 11px; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-online { margin-left: auto; display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--green); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-msg { display: flex; gap: 10px; max-width: 85%; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-msg.user { align-self: flex-end; flex-direction: row-reverse; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-bubble { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 10px 14px; font-size: 13px; line-height: 1.6; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-msg.user .chat-bubble { background: var(--amber-glow); border-color: rgba(245,166,35,0.35); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-msg-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-input-wrap { padding: 16px 20px; border-top: 1px solid var(--border); display: flex; gap: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-input { flex: 1; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; color: var(--text); font-size: 13px; font-family: 'Inter', sans-serif; outline: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-send { background: linear-gradient(135deg, var(--amber-dim), var(--amber)); border: none; border-radius: 10px; padding: 10px 18px; color: #0a0806; font-size: 13px; font-weight: 700; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;canvas id="techCanvas"&gt;&lt;/canvas&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="splash"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="splash-logo-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="splash-title"&gt;DannyGC Cloud&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="splash-sub"&gt;Cloud Services — We Work So You Don't Have To&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="terminal-window"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="terminal-bar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="term-dot red"&gt;&lt;/div&gt;&lt;div class="term-dot yellow"&gt;&lt;/div&gt;&lt;div class="term-dot green"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span&gt;dannygc-portal — boot sequence&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="terminal-body" id="termBody"&gt;&lt;div class="term-cursor" id="termCursor"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="app"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="sidebar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sidebar-logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;div class="logo-text"&gt;&lt;span class="amber"&gt;Danny&lt;/span&gt;GC&lt;/div&gt;&lt;div class="logo-sub"&gt;Cloud Portal&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sidebar-nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-item active" onclick="showTab('dashboard', this)"&gt;&lt;span class="nav-icon"&gt;🏠&lt;/span&gt;&lt;span&gt;Dashboard&lt;/span&gt;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-item" onclick="showTab('chat', this)"&gt;&lt;span class="nav-icon"&gt;🤖&lt;/span&gt;&lt;span&gt;AI Chat&lt;/span&gt;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sidebar-status"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="status-row"&gt;&lt;div class="status-dot green" id="sidebarAiDot"&gt;&lt;/div&gt;&lt;span&gt;AI Core&lt;/span&gt;&lt;span class="status-val" id="ollamaStatus"&gt;checking...&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="status-row"&gt;&lt;div class="status-dot green"&gt;&lt;/div&gt;&lt;span&gt;Portal&lt;/span&gt;&lt;span class="status-val" style="color:var(--amber)"&gt;online&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="main"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="topbar"&gt;&lt;div class="topbar-title" id="topbarTitle"&gt;Dashboard&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="content"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tab-panel active" id="tab-dashboard"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="margin-bottom:15px;"&gt;Welcome to the DannyGC Dashboard&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="color:var(--text-dim)"&gt;Navigate to the AI Chat tab to interact with your local DeepSeek agent.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tab-panel" id="tab-chat"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="chat-panel" style="height:calc(100vh - 100px)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="chat-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="chat-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="chat-name"&gt;DannyGC AI Assistant&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="chat-model" id="chatModel"&gt;ollama / deepseek-r1:32b&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="chat-online" id="chatOnline"&gt;&lt;div class="status-dot green"&gt;&lt;/div&gt; Online&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="chat-messages" id="chatMessages"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="chat-msg"&gt;&lt;div class="chat-msg-icon"&gt;☁️&lt;/div&gt;&lt;div class="chat-bubble"&gt;DannyGC AI Core Online. Bare-metal A6000 connection established. Awaiting directive.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="chat-input-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input class="chat-input" id="chatInput" placeholder="Enter command directive..." onkeydown="if(event.key==='Enter')sendChat()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="chat-send" onclick="sendChat()"&gt;EXECUTE&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Simple splash screen logic</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const bootLines = ['Initializing DannyGC Cloud...', 'Connecting to A6000...', 'Mounting UI...'];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>async function runBootSequence() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const body = document.getElementById('termBody');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const cursor = document.getElementById('termCursor');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>for (let i = 0; i &lt; bootLines.length; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>await new Promise(r =&gt; setTimeout(r, 600));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const line = document.createElement('div'); line.className = 'term-line visible';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line.innerHTML = `&lt;span class="term-ok"&gt;[ OK ]&lt;/span&gt;&lt;span class="term-text"&gt;${bootLines[i]}&lt;/span&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body.insertBefore(line, cursor);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>await new Promise(r =&gt; setTimeout(r, 800));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('splash').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('app').classList.add('visible');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>checkOllama();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function showTab(name, btn) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-panel').forEach(p =&gt; p.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.nav-item').forEach(b =&gt; b.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('tab-' + name).classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (btn) btn.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ─── LIVE AI STATUS ─── */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>async function checkOllama() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const sidebarDot = document.getElementById('sidebarAiDot');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const sidebarSt = document.getElementById('ollamaStatus');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const chatOnline = document.getElementById('chatOnline');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const r = await fetch('http://38.247.186.142:11434/api/tags', { signal: AbortSignal.timeout(5000) });</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (r.ok) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sidebarDot.className = 'status-dot green';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sidebarSt.textContent = 'online'; sidebarSt.style.color = 'var(--green)';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chatOnline.innerHTML = '&lt;div class="status-dot green"&gt;&lt;/div&gt; Online';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else throw new Error();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} catch {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sidebarDot.className = 'status-dot red';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sidebarSt.textContent = 'offline'; sidebarSt.style.color = 'var(--red)';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>chatOnline.innerHTML = '&lt;div class="status-dot red"&gt;&lt;/div&gt; Offline (CORS or Server Down)';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ─── AI CHAT ─── */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>async function sendChat() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const input = document.getElementById('chatInput');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const msg = input.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!msg) return;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input.value = '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const msgs = document.getElementById('chatMessages');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>msgs.innerHTML += `&lt;div class="chat-msg user"&gt;&lt;div class="chat-msg-icon"&gt;👤&lt;/div&gt;&lt;div class="chat-bubble"&gt;${msg}&lt;/div&gt;&lt;/div&gt;`;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const bubbleId = 'ai-msg-' + Date.now();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const thinking = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>thinking.className = 'chat-msg';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>thinking.innerHTML = `&lt;div class="chat-msg-icon"&gt;☁️&lt;/div&gt;&lt;div class="chat-bubble" id="${bubbleId}"&gt;Processing directive...&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>msgs.appendChild(thinking);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>msgs.scrollTop = msgs.scrollHeight;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const res = await fetch('http://38.247.186.142:11434/api/chat', {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>headers: { 'Content-Type': 'application/json' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body: JSON.stringify({</p>
+<p class="p1"><span class="Apple-converted-space">          </span>model: 'deepseek-r1:32b',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>messages: [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ role: 'system', content: 'You are the central intelligence for DannyGC Cloud Services. Your core directive is to execute automated B2B lead enrichment. Keep responses tactical and efficient.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ role: 'user', content: msg }</p>
+<p class="p1"><span class="Apple-converted-space">          </span>],</p>
+<p class="p1"><span class="Apple-converted-space">          </span>stream: false</p>
+<p class="p1"><span class="Apple-converted-space">        </span>})</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const data = await res.json();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(bubbleId).innerHTML = data.message.content.replace(/\n/g, '&lt;br&gt;');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} catch (err) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(bubbleId).innerHTML = '&lt;span style="color:var(--red)"&gt;System Error: Could not reach DeepSeek model on the A6000.&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>msgs.scrollTop = msgs.scrollHeight;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>runBootSequence();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
